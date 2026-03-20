@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Action PLANète B</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Science+Gothic:wght@100..900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
         rel="stylesheet">
 </head>
 
@@ -18,24 +17,109 @@
         <div class="header__brand">
             <div class="header__brandlogo">
                 <div class="header__brandlogoB">B</div>
+                <img class="header__brandlogoleaf" src="./assets/leaf.png" alt="">
             </div>
             <div class="header__brandtitle">
-                <span class="header__brandtitle--accent">Action</span>
+                <span class="header__brandtitle--accent">Action </span>
                 <span class="header__brandtitle--main">PLAN</span>
-                <span class="header__brandtitle--accent">ète</span>
+                <span class="header__brandtitle--accent">ète </span>
                 <span class="header__brandtitle--main">B</span>
             </div>
         </div>
         <nav class="header__navbar">
-            <a href="#" class="header__navbarlink">Accueil</a>
-            <a href="#" class="header__navbarlink">À propos</a>
-            <a href="#" class="header__navbarlink">Nos services</a>
-            <a href="#" class="header__navbarlink">Activités</a>
-            <a href="#" class="header__navbarlink">Témoignages</a>
-            <a href="#" class="header__navbarlink">Nous joindre</a>
+            <a href="#" class="header__navbarlinks">Accueil</a>
+            <a href="#" class="header__navbarlinks">À propos</a>
+            <a href="#" class="header__navbarlinks">Nos services</a>
+            <a href="#" class="header__navbarlinks">Activités</a>
+            <a href="#" class="header__navbarlinks">Témoignages</a>
+            <a href="#" class="header__navbarlinks">Nous joindre</a>
         </nav>
-        <button class="header__button"> <p class="header__buttontext">Engagez-vous avec nous</p></button>
+        <button class="header__button">
+            <p class="header__buttontext">Engagez-vous avec nous</p>
+        </button>
     </header>
+
+    <section class="hero">
+        <div class="hero__container">
+            <h1 class="hero__containertitle">
+                Rejoignez notre lutte<br>
+                pour la planète <span class="hero__containertitle--emoji">🌱</span>
+            </h1>
+            <p class="hero__containerdesc">Ensemble, nous pouvons faire la différence.</p>
+            <div class="hero__containerbutton">
+                <a href="#" class="hero__containerbutton_secondary">
+                    <span class="hero__containerbutton_secondarytitle">En savoir plus</span>
+                </a>
+                <a href="#" class="hero__containerbutton_primary">
+                    <span class="hero__containerbutton_primarytitle">Agir maintenant</span>
+                </a>
+            </div>
+        </div>
+        <div class="hero__image">
+            <img src="./assets/Forêt.jpg" alt="une forêt">
+        </div>
+    </section>
+    <section class="contents">
+        <div class="contents__container">
+            <h1 class="contents__title">
+                À propos
+            </h1>
+            <p class="contents__desc">
+                Nous sommes une ONG dédiée à la protection de notre environnement. <br>
+                Notre mission est de sensibiliser et d'agir pour un monde plus durable.
+            </p>
+            <div class="contents__list">
+                <div class="contents__row">
+                    <div class="contents__article">
+                        <div class="contents__image-container">
+                            <img src="./assets/emoji_nature.png" alt="un emoji nature">
+                        </div>
+                        <div class="contents__frame">
+                            <h3 class="contents__frame-title">
+                                Notre Mission
+                            </h3>
+                            <p class="contents__frame-subtitle">
+                                Nous croyons en une approche collaborative pour préserver les ressources de la planète.
+                            </p>
+                            <div class="content__user-container"></div>
+                            <div class="content__avatar-container">
+                                <div class="contents__avatar"></div>
+                                <div class="contents__avatar-frame"></div>
+                                <p class="contents__avatar-title">
+                                    Équipe ONG
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contents__list">
+                <div class="contents__row">
+                    <div class="contents__article">
+                        <div class="contents__image-container">
+                            <img src="./assets/grass.png" alt="un emoji pelouse">
+                        </div>
+                        <div class="contents__frame">
+                            <h3 class="contents__frame-title">
+                                Notre Vision
+                            </h3>
+                            <p class="contents__frame-subtitle">
+                                Unir les communautés pour un avenir écologique.
+                            </p>
+                            <div class="content__user-container"></div>
+                            <div class="content__avatar-container">
+                                <div class="contents__avatar"></div>
+                                <div class="contents__avatar-frame"></div>
+                                <p class="contents__avatar-title">
+                                    Équipe ONG
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </body>
 
 </html>
