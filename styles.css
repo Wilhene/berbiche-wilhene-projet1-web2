@@ -1,45 +1,37 @@
 :root {
-    --color-bg:#F2E8CF;
+    --color-bg: #F2E8CF;
     --color-text: #1A2E1A;
     --color-text-light: #386641;
     --color-text-on-dark: #FFF;
     --color-primary: #6A994E;
-    --color-secondary:#A7C957;
+    --color-secondary: #A7C957;
     --color-accent: #386641;
-
     --font: "Libre Baskerville", serif;
-
-    --text-xs:   14px;
-    --text-sm:   16px;
-    --text-md:   20px;
-    --text-lg:   22px;
-    --text-xl:   40px;
-
-    --lh-xs:  20px;
-    --lh-sm:  22px;
-    --lh-md:  24px;
-    --lh-lg:  28px;
-    --lh-xl:  48px;
-
-    --space-xs:   4px;
-    --space-sm:   8px;
-    --space-md:  12px;
-    --space-lg:  16px;
-    --space-xl:  24px;
+    --text-xs: 14px;
+    --text-sm: 16px;
+    --text-md: 20px;
+    --text-lg: 22px;
+    --text-xl: 40px;
+    --lh-xs: 20px;
+    --lh-sm: 22px;
+    --lh-md: 24px;
+    --lh-lg: 28px;
+    --lh-xl: 48px;
+    --space-xs: 4px;
+    --space-sm: 8px;
+    --space-md: 12px;
+    --space-lg: 16px;
+    --space-xl: 24px;
     --space-2xl: 40px;
     --space-3xl: 60px;
-
     --section-padding: var(--space-3xl) 170px;
-
-    --radius-sm:  4px;
-    --radius-md:  6px;
-    --radius-lg:  8px;
+    --radius-sm: 4px;
+    --radius-md: 6px;
+    --radius-lg: 8px;
     --radius-xl: 16px;
-    --radius-full: 9999px;
-
     --overlay-light: rgba(0, 0, 0, 0.05);
-    --overlay-mid:   rgba(0, 0, 0, 0.10);
-    --overlay-img:   rgba(217, 217, 217, 0.50);
+    --overlay-mid: rgba(0, 0, 0, 0.10);
+    --overlay-img: rgba(217, 217, 217, 0.50);
 }
 
 * {
@@ -56,7 +48,37 @@ body {
     font-family: var(--font);
 }
 
+/**
+ * Header - Barre de navigation principal
+ *
+ * Utilisation :
+ * <header class="header">
+ *   <div class="header__brand">
+ *     <div class="header__logo">...</div>
+ *     <div class="header__brand-title">...</div>
+ *   </div>
+ *   <nav class="header__nav">...</nav>
+ *   <div class="header__cta">...</div>
+ * </header>
+ *
+ * Éléments :
+ * header__brand : Bloc logo avec titre
+ * header__logo : Conteneur carré du logo
+ * header__logo-letter : Lettre B (du logo)
+ * header__logo-leaf : Icône feuille (du logo)
+ * header__brand-title : Nom du site
+ * header__nav : Menu de navigation (liens vers sections)
+ * header__nav-link : Lien du menu
+ * header__cta : Bouton d'appel à l'action
+ * header__cta-label : Texte du bouton
+ *
+ * Variantes :
+ * header__brand-title--accent : Parties du nom en couleur secondaire (Action, ète)
+ * header__brand-title--main : Parties du nom en couleur bg (PLAN, B)
+ */
+
 header {
+    /* Ici commence les styles du composant et de ses éléments */
     display: flex;
     height: 80px;
     padding: 10px 60px;
@@ -169,7 +191,31 @@ header {
     line-height: var(--lh-sm);
 }
 
+/**
+ * Hero - Section principal d’accueil avec image de fond
+ *
+ * Utilisation :
+ * <section class="hero">
+ *   <div class="hero__content">...</div>
+ *   <div class="hero__image">...</div>
+ * </section>
+ * 
+ * Éléments :
+ * hero__content : Conteneur gauche avec texte et boutons
+ * hero__title : Titre du hero
+ * hero__title-emoji : Emoji dans le titre
+ * hero__desc : Description du hero
+ * hero__actions : Conteneur des boutons d'action
+ * hero__btn : Boutons d'action
+ * hero__image : Image visuelle à l'avant
+ *
+ * Variantes :
+ * hero__btn--outline : Bouton avec uniquement le contour (En savoir plus)
+ * hero__btn--filled : Bouton rempli (Agir maintenant)
+ */
+
 .hero {
+    /* Ici commence les styles du composant et de ses éléments */
     display: flex;
     height: 700px;
     padding: var(--space-3xl);
@@ -261,7 +307,41 @@ header {
     background: url('./assets/Forêt.jpg') lightgray 50% / cover no-repeat;
 }
 
+/**
+ * Contents - Section de contenu (À propos / Services)
+ *
+ * Utilisation :
+ * <section class="contents">
+ *   <div class="contents__header">...</div>
+ *   <div class="contents__list">...</div>
+ * </section>
+ *
+ * Éléments :
+ * contents__header : Bloc titre avec description
+ * contents__title : Titre principal (À propos)
+ * contents__desc : Description
+ * contents__list : Liste des cartes
+ * contents__row : Ligne de carte
+ * contents__card : Carte seule
+ * contents__card-image : Image de la carte
+ * contents__card-body : Contenu texte de la carte
+ * contents__card-title : Titre de la carte
+ * contents__card-subtitle : Texte descriptif de la carte
+ * contents__card-meta : Infos supplémentaires
+ * contents__avatar-group : Groupe des avatars avec nom
+ * contents__avatar : Cercle avatar
+ * contents__avatar-info : Conteneur info avatar
+ * contents__avatar-name : Nom associé à l'avatar
+ *
+ * Variantes :
+ * contents__title--light : Titre principal clair (section Services)
+ * contents--dark : Fond foncé (section Services)
+ * contents__card-title--dark : Titre de la carte en couleur plus foncé (section Services)
+ * 
+ */
+
 .contents {
+    /* Ici commence les styles du composant et de ses éléments */
     display: flex;
     padding: var(--section-padding);
     flex-direction: column;
@@ -404,7 +484,9 @@ header {
 .contents__avatar {
     width: 20px;
     height: 20px;
-    border-radius: var(--radius-full);
+    justify-content: center;
+    align-items: center;
+    border-radius: 32px;
     background: var(--overlay-mid);
 }
 
@@ -429,7 +511,34 @@ header {
     line-height: var(--lh-xs);
 }
 
+/**
+ * List - Section liste d’activités
+ *
+ * Utilisation :
+ * <section class="list">
+ *   <div class="list__content">...</div>
+ *   <div class="list__schedule">...</div>
+ * </section>
+ *
+ * Éléments :
+ * list__content : Texte à gauche (titre et description)
+ * list__title : Titre principal de la section
+ * list__desc : Description
+ * list__schedule : conteneur des rangées d'activités
+ * list__row : Rangée avec séparateur
+ * list__item : Élément d'une activité
+ * list__item-icon-wrap : Cercle contenant l'icône
+ * list__item-icon : Icône emoji d'une activité
+ * list__item-body : Conteneur du titre d'une activité
+ * list__item-title : Nom d'une activité
+ * list__item-meta : Date d'une activité
+ *
+ * Variantes :
+ * aucune
+ */
+
 .list {
+    /* Ici commence les styles du composant et de ses éléments */
     display: flex;
     padding: var(--section-padding);
     justify-content: center;
@@ -545,7 +654,34 @@ header {
     line-height: var(--lh-lg);
 }
 
+/**
+ * Reviews - Section témoignages
+ *
+ * Utilisation :
+ * <section class="reviews">
+ *   <div class="reviews__list">...</div>
+ *   <div class="reviews__sidebar">...</div>
+ * </section>
+ *
+ * Éléments :
+ * reviews__list : Liste des cartes
+ * reviews__row : Ligne de carte
+ * reviews__card : Carte témoignage
+ * reviews__card-meta : Conteneur de l'avatar et du nom de l'auteur
+ * reviews__avatar-group : Groupe des avatars avec nom
+ * reviews__avatar : Cercle avatar
+ * reviews__avatar-info : Conteneur info avatar
+ * reviews__avatar-name : Nom associé à l'avatar
+ * reviews__comment : Commentaire de la carte
+ * reviews__sidebar : Conteneur du titre principal
+ * reviews__title : Titre principal
+ *
+ * Variantes :
+ * aucune
+ */
+
 .reviews {
+    /* Ici commence les styles du composant et de ses éléments */
     display: flex;
     padding: var(--section-padding);
     justify-content: center;
@@ -659,7 +795,33 @@ header {
     line-height: var(--lh-xl);
 }
 
+/**
+ * Form - Section formulaire de contact
+ *
+ * Utilisation :
+ * <section class="form">
+ *   <div class="form__container">...</div>
+ *   <div class="form__list">...</div>
+ * </section>
+ *
+ * Éléments :
+ * form__container : Conteneur du titre de la section
+ * form__title : Titre principal de la section
+ * form__list : Conteneur des champs et du bouton
+ * form__row : Ligne regroupant les champs côte à côte
+ * form__field : Champ individuel
+ * form__label : Étiquette du champ
+ * form__input-wrap : Conteneur visuel de l'input
+ * form__input-placeholder : Texte placeholder
+ * form__actions : Conteneur du bouton d'envoi
+ * form__btn : Bouton envoyer
+ *
+ * Variantes :
+ * aucune
+ */
+
 .form {
+    /* Ici commence les styles du composant et de ses éléments */
     display: flex;
     padding: var(--section-padding);
     flex-direction: column;
@@ -768,7 +930,27 @@ header {
     text-decoration: none;
 }
 
+/**
+ * Footer - Pied de page
+ *
+ * Utilisation :
+ * <footer class="footer">
+ *   <div class="footer__container">
+ *     <a class="footer__link">...</a>
+ *   </div>
+ * </section>
+ *
+ * Éléments :
+ * footer__container : Conteneur des liens de navigation
+ * footer__link : Lien vers une section du site
+ * footer__separator : Séparateur entre les liens
+ *
+ * Variantes :
+ * aucune
+ */
+
 .footer {
+    /* Ici commence les styles du composant et de ses éléments */
     display: flex;
     padding: var(--space-3xl);
     justify-content: center;
