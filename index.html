@@ -11,48 +11,43 @@
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
         rel="stylesheet">
 </head>
-
 <body>
     <header class="header">
         <div class="header__brand">
-            <div class="header__brandlogo">
-                <div class="header__brandlogoB">B</div>
-                <img class="header__brandlogoleaf" src="./assets/leaf.png" alt="">
+            <div class="header__logo">
+                <div class="header__logo-letter">B</div>
+                <img class="header__logo-leaf" src="./assets/leaf.png" alt="">
             </div>
-            <div class="header__brandtitle">
-                <span class="header__brandtitle--accent">Action </span>
-                <span class="header__brandtitle--main">PLAN</span>
-                <span class="header__brandtitle--accent">ète </span>
-                <span class="header__brandtitle--main">B</span>
+            <div class="header__brand-title">
+                <span class="header__brand-title--accent">Action</span>
+                <span class="header__brand-title--main">PLAN</span>
+                <span class="header__brand-title--accent">ète</span>
+                <span class="header__brand-title--main">B</span>
             </div>
         </div>
-        <nav class="header__navbar">
-            <a href="#" class="header__navbarlinks">Accueil</a>
-            <a href="#" class="header__navbarlinks">À propos</a>
-            <a href="#" class="header__navbarlinks">Nos services</a>
-            <a href="#" class="header__navbarlinks">Activités</a>
-            <a href="#" class="header__navbarlinks">Témoignages</a>
-            <a href="#" class="header__navbarlinks">Nous joindre</a>
+        <nav class="header__nav">
+            <a href="#" class="header__nav-link">Accueil</a>
+            <a href="#" class="header__nav-link">À propos</a>
+            <a href="#" class="header__nav-link">Nos services</a>
+            <a href="#" class="header__nav-link">Activités</a>
+            <a href="#" class="header__nav-link">Témoignages</a>
+            <a href="#" class="header__nav-link">Nous joindre</a>
         </nav>
-        <button class="header__button">
-            <p class="header__buttontext">Engagez-vous avec nous</p>
+        <button class="header__cta">
+            <p class="header__cta-label">Engagez-vous avec nous</p>
         </button>
     </header>
 
     <section class="hero">
-        <div class="hero__container">
-            <h1 class="hero__containertitle">
+        <div class="hero__content">
+            <h1 class="hero__title">
                 Rejoignez notre lutte<br>
-                pour la planète <span class="hero__containertitle--emoji">🌱</span>
+                pour la planète <span class="hero__title-emoji">🌱</span>
             </h1>
-            <p class="hero__containerdesc">Ensemble, nous pouvons faire la différence.</p>
-            <div class="hero__containerbutton">
-                <a href="#" class="hero__containerbutton_secondary">
-                    <span class="hero__containerbutton_secondarytitle">En savoir plus</span>
-                </a>
-                <a href="#" class="hero__containerbutton_primary">
-                    <span class="hero__containerbutton_primarytitle">Agir maintenant</span>
-                </a>
+            <p class="hero__desc">Ensemble, nous pouvons faire la différence.</p>
+            <div class="hero__actions">
+                <a href="#" class="hero__btn hero__btn--outline">En savoir plus</a>
+                <a href="#" class="hero__btn hero__btn--filled">Agir maintenant</a>
             </div>
         </div>
         <div class="hero__image">
@@ -60,55 +55,47 @@
         </div>
     </section>
     <section class="contents">
-        <div class="contents__container">
-            <h1 class="contents__title">
-                À propos
-            </h1>
+        <div class="contents__header">
+            <h1 class="contents__title">À propos</h1>
             <p class="contents__desc">
                 Nous sommes une ONG dédiée à la protection de notre environnement. <br>
                 Notre mission est de sensibiliser et d'agir pour un monde plus durable.
             </p>
-            <div class="contents__list">
-                <div class="contents__row">
-                    <div class="contents__article">
-                        <div class="contents__image-container">
-                            <img src="./assets/emoji_nature.png" alt="un emoji nature">
-                        </div>
-                        <div class="contents__frame">
-                            <h3 class="contents__frame-title">
-                                Notre Mission
-                            </h3>
-                            <p class="contents__frame-subtitle">
-                                Nous croyons en une approche collaborative pour préserver les ressources de la planète.
-                            </p>
-                            <div class="content__user-container"></div>
-                            <div class="content__avatar-container">
+        </div>
+        <div class="contents__list">
+            <div class="contents__row">
+                <div class="contents__card">
+                    <div class="contents__card-image">
+                        <img src="./assets/emoji_nature.png" alt="un emoji nature">
+                    </div>
+                    <div class="contents__card-body">
+                        <h3 class="contents__card-title">Notre Mission</h3>
+                        <p class="contents__card-subtitle">
+                            Nous croyons en une approche collaborative pour préserver les ressources de la planète.
+                        </p>
+                        <div class="contents__card-meta">
+                            <div class="contents__avatar-group">
                                 <div class="contents__avatar"></div>
-                                <div class="contents__avatar-frame"></div>
-                                <p class="contents__avatar-title">
-                                    Équipe ONG
-                                </p>
+                                <div class="contents__avatar-info"></div>
+                                <p class="contents__avatar-name">Équipe ONG</p>
                             </div>
                         </div>
                     </div>
-                    <div class="contents__article">
-                        <div class="contents__image-container">
-                            <img src="./assets/grass.png" alt="un emoji pelouse">
-                        </div>
-                        <div class="contents__frame">
-                            <h3 class="contents__frame-title">
-                                Notre Vision
-                            </h3>
-                            <p class="contents__frame-subtitle">
-                                Unir les communautés pour un avenir écologique.
-                            </p>
-                            <div class="content__user-container"></div>
-                            <div class="content__avatar-container">
+                </div>
+                <div class="contents__card">
+                    <div class="contents__card-image">
+                        <img src="./assets/grass.png" alt="un emoji pelouse">
+                    </div>
+                    <div class="contents__card-body">
+                        <h3 class="contents__card-title">Notre Vision</h3>
+                        <p class="contents__card-subtitle">
+                            Unir les communautés pour un avenir écologique.
+                        </p>
+                        <div class="contents__card-meta">
+                            <div class="contents__avatar-group">
                                 <div class="contents__avatar"></div>
-                                <div class="contents__avatar-frame"></div>
-                                <p class="contents__avatar-title">
-                                    Équipe ONG
-                                </p>
+                                <div class="contents__avatar-info"></div>
+                                <p class="contents__avatar-name">Équipe ONG</p>
                             </div>
                         </div>
                     </div>
@@ -117,206 +104,173 @@
         </div>
     </section>
     <section class="contents contents--dark">
-        <div class="contents__container">
-            <h1 class="contents__title--light">
-                Services
-            </h1>
-            <div class="contents__list">
-                <div class="contents__row">
-                    <div class="contents__article">
-                        <div class="contents__image-container">
-                            <img src="./assets/set_meal.png" alt="emoji d'un bento">
-                        </div>
-                        <div class="contents__frame">
-                            <h3 class="contents__frame-title--dark">
-                                Éducation
-                            </h3>
-                            <p class="contents__frame-subtitle">
-                                Sensibilisation à l'environnement et ateliers collectifs.
-                            </p>
-                        </div>
+        <div class="contents__header">
+            <h1 class="contents__title contents__title--light">Services</h1>
+        </div>
+        <div class="contents__list">
+            <div class="contents__row">
+                <div class="contents__card">
+                    <div class="contents__card-image">
+                        <img src="./assets/set_meal.png" alt="emoji d'un bento">
                     </div>
-                    <div class="contents__article">
-                        <div class="contents__image-container">
-                            <img src="./assets/leafp.png" alt="emoji d'une feuille">
-                        </div>
-                        <div class="contents__frame">
-                            <h3 class="contents__frame-title--dark">
-                                Projets
-                            </h3>
-                            <p class="contents__frame-subtitle">
-                                Mise en œuvre de projets écologiques.
-                            </p>
-                        </div>
+                    <div class="contents__card-body">
+                        <h3 class="contents__card-title contents__card-title--dark">Éducation</h3>
+                        <p class="contents__card-subtitle">Sensibilisation à l'environnement et ateliers collectifs.</p>
                     </div>
-                    <div class="contents__article">
-                        <div class="contents__image-container">
-                            <img src="./assets/coop.png" alt="emoji de deux personne qui se touche la main">
-                        </div>
-                        <div class="contents__frame">
-                            <h3 class="contents__frame-title--dark">
-                                Coopération
-                            </h3>
-                            <p class="contents__frame-subtitle">
-                                Collaboration avec d'autres ONG et communautés.
-                            </p>
-                        </div>
+                </div>
+                <div class="contents__card">
+                    <div class="contents__card-image">
+                        <img src="./assets/leafp.png" alt="emoji d'une feuille">
+                    </div>
+                    <div class="contents__card-body">
+                        <h3 class="contents__card-title contents__card-title--dark">Projets</h3>
+                        <p class="contents__card-subtitle">Mise en œuvre de projets écologiques.</p>
+                    </div>
+                </div>
+                <div class="contents__card">
+                    <div class="contents__card-image">
+                        <img src="./assets/coop.png" alt="emoji de deux personne qui se touche la main">
+                    </div>
+                    <div class="contents__card-body">
+                        <h3 class="contents__card-title contents__card-title--dark">Coopération</h3>
+                        <p class="contents__card-subtitle">Collaboration avec d'autres ONG et communautés.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <section class="list">
-        <div class="list__container">
+        <div class="list__content">
             <h1 class="list__title">Liste des activités</h1>
             <p class="list__desc">Découvrez nos activités mensuelles.</p>
         </div>
         <div class="list__schedule">
             <div class="list__row">
-                <div class="list__item-container">
-                    <div class="list__item-frame">
-                        <span class="list__frame-icon">🌱</span>
+                <div class="list__item">
+                    <div class="list__item-icon-wrap">
+                        <span class="list__item-icon">🌱</span>
                     </div>
-                    <div class="list__title-frame">
-                        <p class="list__frame-title">Atelier de jardinage</p>
+                    <div class="list__item-body">
+                        <p class="list__item-title">Atelier de jardinage</p>
                     </div>
-                    <p class="list__subtitle">15 Mars</p>
+                    <p class="list__item-meta">15 Mars</p>
                 </div>
             </div>
             <div class="list__row">
-                <div class="list__item-container">
-                    <div class="list__item-frame">
-                        <span class="list__frame-icon">🌎</span>
+                <div class="list__item">
+                    <div class="list__item-icon-wrap">
+                        <span class="list__item-icon">🌎</span>
                     </div>
-                    <div class="list__title-frame">
-                        <p class="list__frame-title">Journée mondiale de l'eau</p>
+                    <div class="list__item-body">
+                        <p class="list__item-title">Journée mondiale de l'eau</p>
                     </div>
-                    <p class="list__subtitle">22 Mars</p>
+                    <p class="list__item-meta">22 Mars</p>
                 </div>
             </div>
             <div class="list__row">
-                <div class="list__item-container">
-                    <div class="list__item-frame">
-                        <span class="list__frame-icon">🌳</span>
+                <div class="list__item">
+                    <div class="list__item-icon-wrap">
+                        <span class="list__item-icon">🌳</span>
                     </div>
-                    <div class="list__title-frame">
-                        <p class="list__frame-title">Plantation d'arbres</p>
+                    <div class="list__item-body">
+                        <p class="list__item-title">Plantation d'arbres</p>
                     </div>
-                    <p class="list__subtitle">05 Avril</p>
+                    <p class="list__item-meta">05 Avril</p>
                 </div>
             </div>
         </div>
     </section>
     <section class="reviews">
         <div class="reviews__list">
-            <div class="reviews__list-row">
+            <div class="reviews__row">
                 <div class="reviews__card">
-                    <div class="reviews__user-container">
-                        <div class="reviews__avatar-container">
-                            <div class="reviews_avatar">
+                    <div class="reviews__card-meta">
+                        <div class="reviews__avatar-group">
+                            <div class="reviews__avatar">
                                 <img src="./assets/person.png" alt="emoji personne">
                             </div>
-                            <div class="reviews__avatar-frame">
-                                <p class="reviews__avatar-title">Anne</p>
+                            <div class="reviews__avatar-info">
+                                <p class="reviews__avatar-name">Anne</p>
                             </div>
                         </div>
                     </div>
-                    <p class="reviews__comments">Cette ONG change vraiment les choses.</p>
+                    <p class="reviews__comment">Cette ONG change vraiment les choses.</p>
                 </div>
                 <div class="reviews__card">
-                    <div class="reviews__user-container">
-                        <div class="reviews__avatar-container">
-                            <div class="reviews_avatar">
+                    <div class="reviews__card-meta">
+                        <div class="reviews__avatar-group">
+                            <div class="reviews__avatar">
                                 <img src="./assets/person.png" alt="emoji personne">
                             </div>
-                            <div class="reviews__avatar-frame">
-                                <p class="reviews__avatar-title">Pierre</p>
+                            <div class="reviews__avatar-info">
+                                <p class="reviews__avatar-name">Pierre</p>
                             </div>
                         </div>
                     </div>
-                    <p class="reviews__comments">Je suis fier de contribuer à cette cause.</p>
+                    <p class="reviews__comment">Je suis fier de contribuer à cette cause.</p>
                 </div>
                 <div class="reviews__card">
-                    <div class="reviews__user-container">
-                        <div class="reviews__avatar-container">
-                            <div class="reviews_avatar">
+                    <div class="reviews__card-meta">
+                        <div class="reviews__avatar-group">
+                            <div class="reviews__avatar">
                                 <img src="./assets/person.png" alt="emoji personne">
                             </div>
-                            <div class="reviews__avatar-frame">
-                                <p class="reviews__avatar-title">George</p>
+                            <div class="reviews__avatar-info">
+                                <p class="reviews__avatar-name">George</p>
                             </div>
                         </div>
                     </div>
-                    <p class="reviews__comments">On a besoin de s'activer collectivement pour sauver la planète!</p>
+                    <p class="reviews__comment">On a besoin de s'activer collectivement pour sauver la planète!</p>
                 </div>
             </div>
         </div>
-        <div class="reviews__container">
+        <div class="reviews__sidebar">
             <h1 class="reviews__title">Témoignages</h1>
         </div>
     </section>
     <section class="form">
         <div class="form__container">
-            <h1 class="form__title">
-                Contactez-nous
-            </h1>
+            <h1 class="form__title">Contactez-nous</h1>
         </div>
         <div class="form__list">
-            <div class="form__list-row">
-                <div class="form__input-container">
-                    <p class="form__category">
-                        Nom
-                    </p>
-                    <div class="form__texfield-container">
-                        <p class="form__textfield">
-                            Entrez votre nom
-                        </p>
+            <div class="form__row">
+                <div class="form__field">
+                    <p class="form__label">Nom</p>
+                    <div class="form__input-wrap">
+                        <p class="form__input-placeholder">Entrez votre nom</p>
                     </div>
                 </div>
-                <div class="form__input-container">
-                    <p class="form__category">
-                        Email
-                    </p>
-                    <div class="form__texfield-container">
-                        <p class="form__textfield">
-                            Entrez votre email
-                        </p>
+                <div class="form__field">
+                    <p class="form__label">Email</p>
+                    <div class="form__input-wrap">
+                        <p class="form__input-placeholder">Entrez votre email</p>
                     </div>
                 </div>
-                <div class="form__input-container">
-                    <p class="form__category">
-                        Message
-                    </p>
-                    <div class="form__texfield-container">
-                        <p class="form__textfield">
-                            Entrez votre message
-                        </p>
+                <div class="form__field">
+                    <p class="form__label">Message</p>
+                    <div class="form__input-wrap">
+                        <p class="form__input-placeholder">Entrez votre message</p>
                     </div>
                 </div>
             </div>
-            <div class="form__button">
-                <button class="form__button-primary">
-                    <p class="form__button-title">
-                        Envoyer
-                    </p>
-                </button>
+            <div class="form__actions">
+                <button class="form__btn">Envoyer</button>
             </div>
         </div>
     </section>
-    <section class="footer">
+    <footer class="footer">
         <div class="footer__container">
-            <a href="#" class="footer__title">Liens rapides</a>
+            <a href="#" class="footer__link">Liens rapides</a>
             <p class="footer__separator">|</p>
-            <a href="#" class="footer__title">À propos de nous</a>
+            <a href="#" class="footer__link">À propos de nous</a>
             <p class="footer__separator">|</p>
-            <a href="#" class="footer__title">Nous contacter</a>
+            <a href="#" class="footer__link">Nous contacter</a>
             <p class="footer__separator">|</p>
-            <a href="#" class="footer__title">Suivez-nous sur les réseaux sociaux</a>
+            <a href="#" class="footer__link">Suivez-nous sur les réseaux sociaux</a>
         </div>
-        <button class="header__button">
-            <p class="header__buttontext">Engagez-vous avec nous</p>
+        <button class="header__cta">
+            <p class="header__cta-label">Engagez-vous avec nous</p>
         </button>
-    </section>
+    </footer>
 </body>
-
 </html>
